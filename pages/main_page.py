@@ -1,11 +1,13 @@
 import time
 from telnetlib import EC
 
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Main_page(Base):
@@ -77,23 +79,36 @@ class Main_page(Base):
 
     """Methods"""
     def select_products_1(self):
-        self.get_current_url()
-        self.click_select_product_1()
-        self.click_cart()
+        with allure.step("Select Products 1"):
+            Logger.add_start_step(method='select_products_1')
+            self.get_current_url()
+            self.click_select_product_1()
+            self.click_cart()
+            Logger.add_end_step(url=self.driver.current_url, method='select_products_1')
 
     def select_products_2(self):
-        self.get_current_url()
-        self.click_select_product_2()
-        self.click_cart()
+        with allure.step("Select Products 2"):
+            Logger.add_start_step(method='select_products_2')
+            self.get_current_url()
+            self.click_select_product_2()
+            self.click_cart()
+            Logger.add_end_step(url=self.driver.current_url, method='select_products_2')
 
     def select_products_3(self):
-        self.get_current_url()
-        self.click_select_product_3()
-        self.click_cart()
+        with allure.step("Select Products 3"):
+            Logger.add_start_step(method='select_products_3')
+            self.get_current_url()
+            self.click_select_product_3()
+            self.click_cart()
+            Logger.add_end_step(url=self.driver.current_url, method='select_products_3')
+
     def select_menu_about(self):
-        self.click_menu()
-        self.click_link_about()
-        self.assert_url("https://saucelabs.com/")
+        with allure.step("Select Menu About"):
+            Logger.add_start_step(method='select_menu_about')
+            self.click_menu()
+            self.click_link_about()
+            self.assert_url("https://saucelabs.com/")
+            Logger.add_end_step(url=self.driver.current_url, method='select_menu_about')
 
 
 

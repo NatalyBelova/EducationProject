@@ -1,4 +1,5 @@
 import time
+import allure
 from telnetlib import EC
 
 from selenium.webdriver.common.by import By
@@ -7,6 +8,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from base.base_class import Base
 from faker import Faker
+
+from utilities.logger import Logger
+
 
 class Client_information_page(Base):
 
@@ -61,11 +65,14 @@ class Client_information_page(Base):
     """Methods"""
 
     def client_information(self):
-        fake = Faker("ru_RU")
-        self.get_current_url()
-        self.input_first_name(fake.first_name())
-        self.input_last_name(fake.last_name())
-        self.input_postal_code(fake.postcode())
-        self.click_continue_button()
+        with allure.step("Client Information"):
+            Logger.add_start_step(method='client_information')
+            fake = Faker("ru_RU")
+            self.get_current_url()
+            self.input_first_name(fake.first_name())
+            self.input_last_name(fake.last_name())
+            self.input_postal_code(fake.postcode())
+            self.click_continue_button()
+            Logger.add_end_step(url=self.driver.current_url, method='client_information')
 
 

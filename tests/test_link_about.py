@@ -1,6 +1,7 @@
 import time
 from telnetlib import EC
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -15,7 +16,7 @@ from pages.login_page import Login_page
 from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
-
+@allure.description("Test Link About")
 def test_link_about(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])

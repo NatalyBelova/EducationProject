@@ -1,0 +1,12 @@
+Start Test
+Start Test
+Current url https://www.saucedemo.com/
+Input user name
+Input password
+CLick login button
+Good value word
+CLick Menu
+CLick Link About
+Good value url
+Finish Test
+Finish Test

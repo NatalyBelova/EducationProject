@@ -1,0 +1,88 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:55.043126
+Start name method: authorisation
+
+End time: 2023-06-29 08:39:57.893345
+End name method: authorisation
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:57.895371
+Start name method: select_products_1
+
+End time: 2023-06-29 08:39:58.258994
+End name method: select_products_1
+URL: https://www.saucedemo.com/cart.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:58.263521
+Start name method: product_confirmation
+
+End time: 2023-06-29 08:39:58.822573
+End name method: product_confirmation
+URL: https://www.saucedemo.com/checkout-step-one.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:58.822573
+Start name method: client_information
+
+End time: 2023-06-29 08:39:59.798385
+End name method: client_information
+URL: https://www.saucedemo.com/checkout-step-two.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:59.798385
+Start name method: payment
+
+End time: 2023-06-29 08:39:59.947403
+End name method: payment
+URL: https://www.saucedemo.com/checkout-complete.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-06-29 08:39:59.947403
+Start name method: finish
+
+End time: 2023-06-29 08:40:00.112524
+End name method: finish
+URL: https://www.saucedemo.com/checkout-complete.html
+
+-----
+
+-----
+Test: tests/test_link_about.py::test_link_about (call)
+Start time: 2023-06-29 08:40:11.533664
+Start name method: authorisation
+
+End time: 2023-06-29 08:40:15.507691
+End name method: authorisation
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_link_about.py::test_link_about (call)
+Start time: 2023-06-29 08:40:15.510723
+Start name method: select_menu_about
+
+End time: 2023-06-29 08:40:30.423309
+End name method: select_menu_about
+URL: https://saucelabs.com/
+
+-----
